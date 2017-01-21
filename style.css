@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Light-webfont.eot');
+    src: url('../fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Light-webfont.woff') format('woff'), url('../fonts/ProximaNova-Light-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Reg-webfont.eot');
+    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'), url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'), url('../fonts/ProximaNova-Reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+html {
+    font-family: ProximaNova;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background: #fff;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.ripple {
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: rgba(253, 184, 39, 0.62);
+	transform: scale(0);
+	position: absolute;
+	opacity: 1;
+}
+
+.uk-card {
+	overflow: hidden;
+	position: relative;
+}
+
+.uk-card .uk-card-title {
+	margin-top: 0 !important;
+}
+
+.rippleEffect {
+	animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 18px;
+}
+
+#qr-canvas {
+	display: none;
+}
+
+
+.wcu {
+	color: #532C6C !important;
+}
+
+.ucw {
+	background-color: #532C6C !important;
+}
+
+.login {
+   position: absolute;
+    z-index: 1000;
+}
+
+.login .start {
+	border-radius: 500px;
+}
+
+.home {
+	height: calc(100vh - 140px);
+	overflow: scroll;
+}
+
+.home .uk-label {
+	background-color: #FDB827;
+	color: black;
+}
+
+.vidbox {
+    position: relative;
+    overflow: hidden;
+}
+
+.vidbox .scanbox-shadow {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0 0 1000px rgba(0, 0, 0, 0.58);
+}
+
+.vidbox .scanbox {
+    width: 150px;
+    height: 150px;
+    positioN: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vidbox .scanbox:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 6px solid #FDB827;
+    border-left: 6px solid #FDB827;
+}
+
+.vidbox .scanbox:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-top: 6px solid #FDB827;
+    border-right: 6px solid #FDB827;
+}
+
+.vidbox .scanbox span:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    border-bottom: 6px solid #FDB827;
+    border-left: 6px solid #FDB827;
+}
+
+.vidbox .scanbox span:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    border-bottom: 6px solid #FDB827;
+    border-right: 6px solid #FDB827;
+}

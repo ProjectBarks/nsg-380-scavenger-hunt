@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html class="uk-width-1-1 uk-height-1-1" lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>NSG 380 Scavenger Hunt</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A scavenger hunt to review the locations of essentials in a nursing environment.">
+	<meta name="author" content="Nancy Barker">
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.5/css/uikit.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.5/js/uikit.min.js"></script>
+</head>
+<body class="uk-width-1-1 uk-height-1-1">
+    <div class="ucw uk-width-1-1 uk-height-1-1 uk-section-primary login">
+        <div class="uk-width-large uk-position-center">
+        	<img class="uk-align-center" src="./logo.png"/>
+        	<p class="uk-margin-medium uk-text-lead uk-text-center">Welcome to Dr. Barker's Scavanger Hunt</p>
+        	<button class="uk-button uk-button-default uk-button-small uk-align-center start">Begin</button>
+        </div>
+    </div>
+	<nav class="uk-navbar-container ucw" uk-sticky="bottom: #top" uk-navbar>
+	    <div class="uk-navbar-left">
+	    	<ul class="uk-navbar-nav">
+	        	<li style="color: white; font-weight: 800; font-size: 20px;"><img src="./logo.png" width="32px" height="32px" /> SCAVANGER</li>
+        	</ul>
+	    </div>
+	</nav>
+    <div id="barcode-scan" uk-modal="" class="uk-modal">
+	    <div class="uk-modal-dialog uk-modal-body">
+	        <h2 class="uk-modal-title">Read QR-Code</h2>
+	        <div class="vidbox">
+	        	<div class="scanbox-shadow"></div>
+	        	<div class="scanbox"><span></span></div>
+	        	<video id="video" autoplay></video>
+	        </div>
+	        <div id="video-error"></div>
+	        <canvas id="qr-canvas" width="640" height="480" autoplay></canvas>
+	        <p class="uk-text-center"><b>Status: </b><span id="qr-status">Reading</span> </p>
+	        <p class="uk-text-center"><button class="uk-button uk-button-primary uk-modal-close ucw" type="button">Cancel</button></p>
+	    </div>
+	</div>
+    <div class="uk-padding home"></div>
+
+	<script type="text/javascript" src="./scripts/grid.js"></script>
+	<script type="text/javascript" src="./scripts/version.js"></script>
+	<script type="text/javascript" src="./scripts/detector.js"></script>
+	<script type="text/javascript" src="./scripts/formatinf.js"></script>
+	<script type="text/javascript" src="./scripts/errorlevel.js"></script>
+	<script type="text/javascript" src="./scripts/bitmat.js"></script>
+	<script type="text/javascript" src="./scripts/datablock.js"></script>
+	<script type="text/javascript" src="./scripts/bmparser.js"></script>
+	<script type="text/javascript" src="./scripts/datamask.js"></script>
+	<script type="text/javascript" src="./scripts/rsdecoder.js"></script>
+	<script type="text/javascript" src="./scripts/gf256poly.js"></script>
+	<script type="text/javascript" src="./scripts/gf256.js"></script>
+	<script type="text/javascript" src="./scripts/decoder.js"></script>
+	<script type="text/javascript" src="./scripts/qrcode.js"></script>
+	<script type="text/javascript" src="./scripts/findpat.js"></script>
+	<script type="text/javascript" src="./scripts/alignpat.js"></script>
+	<script type="text/javascript" src="./scripts/databr.js"></script>
+	<script type="text/javascript" src="./scripts/camvas.js"></script>
+	<script type="text/javascript" src="./scripts/script.js"></script>
+
+</body>
+</html>
