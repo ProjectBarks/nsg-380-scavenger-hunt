@@ -69,7 +69,7 @@ $(function() {
 	}
 
 	$('#barcode-scan').on('hide', function () { target = ""; });
-
+	
 	qrcode.callback = function(x) {
 		x = x.toLowerCase().trim().replace(' ', '');
         if (target == "") return;
