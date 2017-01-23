@@ -41,7 +41,17 @@
 	        	<div class="scanbox-shadow"></div>
 	        	<div class="scanbox"><span></span></div>
 	        	<video id="video" width="640" height="480" autoplay></video>
+	        	<img id="safari" width="640" height="480" src=""/>
 	        </div>
+	        <div class="test-upload uk-inline uploader" uk-form-custom>
+			    <input id="scan" type="file" accept="image/*">
+			    <a class="camera">
+			    	<svg viewBox="0 0 20 20" icon="camera" width="20" height="20" ratio="1">
+					    <circle fill="none" stroke="#fff" stroke-width="1.1" cx="10" cy="10.8" r="3.8"></circle>
+					    <path fill="none" stroke="#fff" d="M1,4.5 C0.7,4.5 0.5,4.7 0.5,5 L0.5,17 C0.5,17.3 0.7,17.5 1,17.5 L19,17.5 C19.3,17.5 19.5,17.3 19.5,17 L19.5,5 C19.5,4.7 19.3,4.5 19,4.5 L13.5,4.5 L13.5,2.9 C13.5,2.6 13.3,2.5 13,2.5 L7,2.5 C6.7,2.5 6.5,2.6 6.5,2.9 L6.5,4.5 L1,4.5 L1,4.5 Z"></path>
+					</svg>
+				</a>
+			</div>
 	        <div id="video-error"></div>
 	        <canvas id="qr-canvas" width="640" height="480" autoplay></canvas>
 	        <p class="uk-text-center"><b>Status: </b><span id="qr-status">Reading</span> </p>
@@ -69,6 +79,6 @@
 	<script type="text/javascript" src="./scripts/databr.js"></script>
 	<script type="text/javascript" src="./scripts/camvas.js"></script>
 	<script type="text/javascript" src="./scripts/script.js"></script>
-
+	<script type="text/javascript" src="./scripts/ripple.js"></script>
 </body>
 </html>

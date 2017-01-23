@@ -1,48 +1,10 @@
 $(function() {
-	var target = "";
-
+	UIkit.icon($('.icon'));
 	$('.start').on('click', function() {
 		$('.login').fadeOut();
 	});
 
-	load();
-
-	$("div.rippeler").click(function (e) {
-
-		// Remove any old one
-		$(".ripple").remove();
-
-		// Setup
-		var posX = $(this).offset().left,
-			posY = $(this).offset().top,
-			buttonWidth = $(this).width(),
-			buttonHeight =  $(this).height();
-
-		// Add the element
-		$(this).prepend("<span class='ripple'></span>");
-
-
-		// Make it round!
-		if(buttonWidth >= buttonHeight) {
-			buttonHeight = buttonWidth;
-		} else {
-			buttonWidth = buttonHeight; 
-		}
-
-		// Get the center of the element
-		var x = e.pageX - posX - buttonWidth / 2;
-		var y = e.pageY - posY - buttonHeight / 2;
-
-
-		// Add the ripples CSS and start the animation
-		$(".ripple").css({
-			width: buttonWidth,
-			height: buttonHeight,
-			top: y + 'px',
-			left: x + 'px'
-		}).addClass("rippleEffect");
-	});
-
+	var target = "";
 	var words = {
 		"syringes": "Syringes",
 		"morphine": "Morphine",
@@ -68,8 +30,22 @@ $(function() {
 		}).appendTo($('.home'));
 	}
 
+	if (!!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)) {
+		$('#video').hide();
+		$("#scan").on('change', function(e) {
+			var url = URL.createObjectURL(this.files[0]);
+			$("#safari").attr('src', url);
+			qrstatus.text('Parsing');
+			qrcode.decode(url);
+		});
+	} else {
+		$('.uploader').hide();
+		$('#safari').hide();
+		load();
+	}
+
 	$('#barcode-scan').on('hide', function () { target = ""; });
-	
+
 	qrcode.callback = function(x) {
 		x = x.toLowerCase().trim().replace(' ', '');
         if (target == "") return;

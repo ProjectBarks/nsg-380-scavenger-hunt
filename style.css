@@ -111,6 +111,19 @@ nav {
     pointer-events: none;
 }
 
+.uploader {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.uploader .camera {
+	padding-bottom: 10px;
+	background: red;
+	padding: 10px;
+	border-radius: 500px;
+	margin-left: calc(50% - 20px)
+}
+
 .vidbox .scanbox {
     width: 150px;
     height: 150px;
@@ -119,6 +132,12 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+}
+
+.vidbox #safari {
+    width: 640px;
+    height: 480px;
+    background: grey;
 }
 
 .vidbox .scanbox:before {
