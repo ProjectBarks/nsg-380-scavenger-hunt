@@ -8,9 +8,9 @@ Scavenger hunts can be fun but how do you prove people found everything? This ap
 * Lightweight
 
 ### Screenshots
-![The homescreen of the app itself](/screenshots/screenshot1.png?raw=true | width=200)
-![The device trying to capture a scavenger item](/screenshots/screenshot2.png?raw=true | width=200)
-![All the hidden objects and their coresponding state](/screenshots/screenshot3.png?raw=true | width=200)
+<img src="/screenshots/screenshot1.png?raw=true" width="200" alt="The homescreen of the app"/>
+<img src="/screenshots/screenshot2.png?raw=true" width="200" alt="The device trying to capture a scavenger item"/>
+<img src="/screenshots/screenshot3.png?raw=true" width="200" alt="List of Objects"/>
 
 
 ### Libraries and Tools
