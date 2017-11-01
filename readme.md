@@ -9,7 +9,7 @@ Scavenger hunts can be fun but how do you prove people found everything? This ap
 
 ### Screenshots
 <p float="left">
-	<img src="/screenshots/screenshot1.png?raw=true" width="200" alt="The homescreen of the app"/>
+	<img src="/screenshots/screenshot1.png?raw=true" width="200" alt="The homescreen of the app" hspace="20"/>
 	<img src="/screenshots/screenshot2.png?raw=true" width="200" alt="The device trying to capture a scavenger item" hspace="20"/>
 	<img src="/screenshots/screenshot3.png?raw=true" width="200" alt="List of Objects" hspace="20"/>
 </p>
